@@ -41,15 +41,7 @@ export default function App() {
   }, [appIsReady]);
 
   if (!appIsReady) {
-    return (
-      <View
-        style={{ flex: 1, alignItems: "center", justifyContent: "center" }}
-        onLayout={onLayoutRootView}
-      >
-        <Text>로딩중....</Text>
-        <Entypo name="rocket" size={30} />
-      </View>
-    );
+    return null;
   }
 
   return (
@@ -57,7 +49,7 @@ export default function App() {
       style={{ flex: 1, alignItems: "center", justifyContent: "center" }}
       onLayout={onLayoutRootView}
     >
-      <Text>SplashScreen Demo! 👋</Text>
+      <Text>시작해보자! 👋</Text>
       <Entypo name="rocket" size={30} />
     </View>
   );
